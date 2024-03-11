@@ -27,6 +27,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             e.printStackTrace();
         }
 
+        System.out.println("user Password: " + user.getPassword());
         return org.springframework.security.core.userdetails.User.builder()
                 .username(user.getEmail())
                 .password(user.getPassword())

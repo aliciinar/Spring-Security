@@ -32,7 +32,7 @@ public class Login
     @Autowired
     private AuthenticationManager authenticationManager;
 
-    @GetMapping("getInfo")
+    @GetMapping("/getInfo")
     public ResponseEntity<String> GetInfo()
     {
         return new ResponseEntity<String>("Info",HttpStatus.OK);
@@ -47,7 +47,6 @@ public class Login
     @PostMapping("/login")
     public ResponseEntity<String> Login(@RequestBody LoginDTO loginDTO)
     {
-
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginDTO.getEmail(), loginDTO.getPassword()));
         String token = JwtHelper.generateToken(loginDTO.getEmail());
         return ResponseEntity.ok(token);
