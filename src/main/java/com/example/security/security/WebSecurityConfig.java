@@ -43,6 +43,8 @@ public class WebSecurityConfig
                         //  .requestMatchers("/api/**").authenticated()
                         .requestMatchers("/api/user/v1/authentication/login").permitAll()
                         .requestMatchers("/api/user/v1/authentication/signup").permitAll()
+                        .requestMatchers("/api/user/v1/authentication/getInfo").hasRole("role_user")
+                        .requestMatchers("/api/user/v1/authentication/admin/getInfo").hasRole("role_admin")
                         .anyRequest().authenticated()
 
                 ).authenticationManager(authenticationManager)

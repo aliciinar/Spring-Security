@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "user2")
+@Table(name = "user")
 @Getter
 @Setter
 @ToString
@@ -49,6 +49,17 @@ public class User  implements Serializable {
             columnDefinition = "TEXT"
     )
     private String Password;
+
+
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER )
+    @JoinTable(name="USER_ROLE",
+            joinColumns=
+            @JoinColumn(name="USER_ID", referencedColumnName="ID"),
+            inverseJoinColumns=
+            @JoinColumn(name="ROLE_ID", referencedColumnName="ID")
+    )
+   // @JoinColumn(name = "user_id", referencedColumnName = "id")
+    private Set<Role> Roles = new HashSet<>();
 
 
 

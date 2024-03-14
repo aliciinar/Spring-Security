@@ -29,8 +29,7 @@ public class Login
     private IUserService userService;
 
 
-    @Autowired
-    private AuthenticationManager authenticationManager;
+
 
     @GetMapping("/getInfo")
     public ResponseEntity<String> GetInfo()
@@ -38,8 +37,15 @@ public class Login
         return new ResponseEntity<String>("Info",HttpStatus.OK);
     }
 
+    @GetMapping("/admin/getInfo/")
+    public ResponseEntity<String> GetAdminInfo()
+    {
+        return new ResponseEntity<String>("Info Admin",HttpStatus.OK);
+    }
+
     @PostMapping("/signup")
-    public ResponseEntity<Void> signup( @RequestBody LoginDTO requestDto) {
+    public ResponseEntity<Void> signup( @RequestBody LoginDTO requestDto)
+    {
         userService.signUp(requestDto);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
@@ -47,8 +53,7 @@ public class Login
     @PostMapping("/login")
     public ResponseEntity<String> Login(@RequestBody LoginDTO loginDTO)
     {
-        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginDTO.getEmail(), loginDTO.getPassword()));
-        String token = JwtHelper.generateToken(loginDTO.getEmail());
+       String token = userService.login(loginDTO);
         return ResponseEntity.ok(token);
     }
 

@@ -4,15 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7413392-5ad8-47c9-8866-c322dff29247" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a7413392-5ad8-47c9-8866-c322dff29247" name="Changes" comment="Getinfo end point  bug fixed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/security/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/security/repository/RoleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/security/controller/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/security/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/security/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/security/security/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/security/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/service/user/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/security/service/user/IUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/service/user/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/security/service/user/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/security/service/user/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/security/controller/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/security/controller/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/security/entity/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/security/entity/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/security/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/security/entity/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/security/security/JwtAuthFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/security/security/JwtAuthFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/security/security/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/security/security/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/security/service/user/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/security/service/user/IUserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/security/service/user/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/security/service/user/UserDetailsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/security/service/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/security/service/user/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -63,7 +73,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Yüksek Lisans/SoftwareConstruction/BackEnd/Ceng453-TermProject-Group-4-backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Game" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
@@ -95,6 +105,30 @@
       <option name="presentableId" value="Default" />
       <updated>1709980287952</updated>
     </task>
+    <task id="LOCAL-00001" summary="Getinfo end point  bug fixed">
+      <created>1710182289950</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710182289950</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Getinfo end point  bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Getinfo end point  bug fixed" />
   </component>
 </project>

@@ -7,7 +7,7 @@ public interface IUserService
 {
     User signUp(LoginDTO user);
 
-    User login(String email);
+    String login(LoginDTO loginDTO);
 
 
 }
